@@ -1,10 +1,23 @@
-music.playMelody("B A G A G F A C5 ", 120)
+input.onButtonPressed(Button.A, function () {
+    MugenLock = 0
+    While_lock = 1
+    Menu += 1
+    while (While_lock == 1) {
+        if (Menu == 1) {
+            basic.showString("Compass")
+        }
+    }
+})
+let Menu = 0
+let While_lock = 0
+let MugenLock = 0
+music.playMelody("C D E F G F E D ", 120)
 led.setBrightness(69)
 basic.showString("YOPI15")
 let C1 = 24
 let C2 = 0
 let Mivar1 = 55
-let MugenLock = 0
+MugenLock = 0
 basic.showString("" + C1 + ":" + C2)
 basic.showNumber(C1)
 while (!(input.logoIsPressed())) {
